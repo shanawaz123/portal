@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    /* Keep vertical centering */
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    /* Center the container horizontally */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #141514;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1f2821;
+}
+
+.message {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.message a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/*list*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #d9b9b9;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.liststu {
+    padding: 10px;
+    margin: auto;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 38%;
+    /* Could be more or less, depending on screen size */
+}
+
+@media (max-width: 400px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+.close-button {
+    color: #eb0e0e;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-btn{
+    margin-top: 5px;
+    width: 50px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.7em;
+    margin-top: 5px;
+    text-align: left;
+}
+.update-msg{
+    color: rgb(10, 136, 52);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.error{
+    color: red;
+}
