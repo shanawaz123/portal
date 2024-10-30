@@ -2,7 +2,7 @@
 
 //session start
 session_start();
-define("SITEURL", 'http://localhost/portal/');
+define("SITEURL", 'http://localhost/portal-main/');
 
 
 $host="localhost";
